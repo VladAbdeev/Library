@@ -58,6 +58,7 @@ const fetchFavorites = async () => {
       }
     })
   } catch (err) {
+    console.log(err)
     alert(err)
   }
 };
