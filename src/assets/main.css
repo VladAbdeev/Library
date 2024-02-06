@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bcgd-clr : #f3f0ca;
+}
+body {
+  background-color: var(--bcgd-clr);
+}
