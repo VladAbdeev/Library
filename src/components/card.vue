@@ -1,5 +1,6 @@
 <script setup>
-const props = defineProps({
+import {defineProps} from "vue";
+defineProps({
   id: Number,
   imageUrl: String,
   title: String,
@@ -11,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative bg-white border border-slate-200 rounded-2xl p-8 cursor-pointer hover:-translate-y-2 hover:shadow-xl transition">
+  <div class="relative bg-white border border-slate-200 rounded-2xl p-8 cursor-pointer hover:-translate-y-2 hover:shadow-2xl transition">
     <img @click="onClickFavorite"
          :src="!isFavorite ? '/src/components/icons/Add-to-favorite.svg' : '/src/components/icons/In-Favorite.svg'"
          alt="Like 1"

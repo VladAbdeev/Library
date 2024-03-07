@@ -4,7 +4,6 @@ import {inject} from "vue";
 
 defineProps({
   items: Array,
-
 })
 const addToFavorite= inject('addToFavorite')
 
@@ -16,7 +15,7 @@ const addToFavorite= inject('addToFavorite')
             :key="item.id"
             :imageUrl="item.imageUrl "
             :title="item.title"
-            :on-click-favorite = "() =>  addToFavorite(item)"
+            :on-click-favorite = "() => addToFavorite(item)"
             :isFavorite="item.isFavorite">
       </Card>
 
